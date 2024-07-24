@@ -7,6 +7,7 @@ doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
   head
     include ./head.pug
+    include ./_partial/analytics
   body
     if theme.preloader.enable
       !=partial('includes/loading/index', {}, {cache: true})
